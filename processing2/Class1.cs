@@ -5,35 +5,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace processing2
+namespace Processing2
 {
-    public class processing
+    public class Processing
     {
 
         public static void thresholdProcessing()
         {
-            int threshold_value = 0;
+            int thresholdValue = 0;
 
             Console.Write("Enter number: ");
 
 
-            threshold_value = Int32.Parse(Console.ReadLine());
+            thresholdValue = Int32.Parse(Console.ReadLine());
 
 
-            while (threshold_value != -1)
+            while (thresholdValue != -1)
             {
                 int size = Enum.GetValues(typeof(range)).Length;
                 int i = 0;
                 int previousMax = 0;
-                int max_bound, min_bound;
+                int maxBound, minBound;
                 foreach (range alpha in Enum.GetValues(typeof(range)))
                 {
 
-                    string tempAlpha1 = alpha.ToString();
-                    max_bound = (int)alpha;
-                    min_bound = previousMax;
-                    if (threshold_value >= min_bound && threshold_value <= max_bound) { Console.WriteLine("Category " + tempAlpha1); }
-                    previousMax = max_bound + 1;
+                    string tempAlpha = alpha.ToString();
+                    maxBound = (int)alpha;
+                    minBound = previousMax;
+                    if (thresholdValue >= minVound && thresholdValue <= maxBound)  
+                        { 
+                        Console.WriteLine("Category " + tempAlpha); 
+                        }
+                    previousMax = maxVound + 1;
 
 
 
@@ -41,7 +44,7 @@ namespace processing2
 
                 Console.Write("Enter new number: ");
 
-                threshold_value = Int32.Parse(Console.ReadLine());
+                thresholdValue = Int32.Parse(Console.ReadLine());
 
             }
         }
