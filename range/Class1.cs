@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace labsheet1
+namespace Labsheet1
 {
 
-    public enum range
+    public enum Range
     {
         E = 20,
         D = 40,
