@@ -1,4 +1,4 @@
-﻿using labsheet1;
+﻿using Labsheet1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +22,11 @@ namespace Processing2
 
             while (thresholdValue != -1)
             {
-                int size = Enum.GetValues(typeof(range)).Length;
+                int size = Enum.GetValues(typeof(Range)).Length;
                 int i = 0;
                 int previousMax = 0;
                 int maxBound, minBound;
-                foreach (range alpha in Enum.GetValues(typeof(range)))
+                foreach (range alpha in Enum.GetValues(typeof(Range)))
                 {
 
                     string tempAlpha = alpha.ToString();
