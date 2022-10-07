@@ -10,9 +10,9 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            enum_printing.printing.print();
-            processing2.processing.thresholdProcessing();
-            enum_printing.printing.print();
+            enum_printing.Printing.Print();
+            processing2.Processing.ThresholdProcessing();
+            enum_printing.Printing.Print();
 
             Console.ReadLine();
         }
