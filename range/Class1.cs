@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Labsheet1
 {
-
     public enum Range
     {
         E = 20,
@@ -14,9 +13,5 @@ namespace Labsheet1
         C = 60,
         B = 80,
         A = 100
-
     }
-
-
-
 }
