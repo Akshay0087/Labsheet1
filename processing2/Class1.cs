@@ -10,7 +10,7 @@ namespace Processing2
     public class Processing
     {
 
-        public static void thresholdProcessing()
+        public static void ThresholdProcessing()
         {
             int thresholdValue = 0;
 
