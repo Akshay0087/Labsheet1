@@ -6,25 +6,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
 
-namespace enum_printing
+namespace Enum_printing
 {
-    public class printing
+    public class Printing
     {
 
-        public static void print()
+        public static void Print()
         {
             int size = Enum.GetValues(typeof(range)).Length;
             int previousMax = 0;
-            int max_bound;
-            int min_bound = 0;
+            int maxBound;
+            int minBound = 0;
             foreach (range alpha in Enum.GetValues(typeof(range)))
             {
 
-                string tempAlpha1 = alpha.ToString();
-                max_bound = (int)alpha;
-                min_bound = previousMax;
-                Console.WriteLine("Category: " + tempAlpha1 + " has range of " + min_bound + " - " + max_bound);
-                previousMax = max_bound + 1;
+                string tempAlpha = alpha.ToString();
+                maxBound = (int)alpha;
+                minBound = previousMax;
+                Console.WriteLine("Category: " + tempAlpha + " has range of " + min_bound + " - " + max_bound);
+                previousMax = maxBound + 1;
 
 
             }
